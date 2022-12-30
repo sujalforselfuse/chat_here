@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* background-color: pink; */
+      }
+      body {
+        background-color: hsl(242, 14%, 10%);
+      }
+      nav {
+        background-color: black;
+        width: 100vw;
+        height: 5vh;
+        color: white;
+        text-align: center;
+        font-size: 3vh;
+      }
+
+      .chatsection {
+        height: 38vw;
+        background-image: linear-gradient(rgb(110, 99, 99), hsl(242, 14%, 10%));
+        border: solid black 2px;
+        width: 73vw;
+        margin: auto;
+        overflow-y: scroll;
+      }
+      .chat {
+        background-color: pink;
+        width: 64vw;
+        padding: 1%;
+        color: white;
+        margin-top: 2%;
+      }
+      #left {
+        background-color: hsl(242, 19%, 5%);
+        float: left;
+        clear: both;
+        border-top-right-radius: 10px;
+      }
+      #right {
+        background-color: hsl(342, 92%, 46%);
+        float: right;
+        clear: both;
+        border-bottom-left-radius: 10px;
+      }
+
+      #form {
+        text-align: center;
+      }
+      #send-msg {
+        width: 70vw;
+        height: 4vh;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: hsl(242, 14%, 10%);
+        border: solid hsl(342, 92%, 46%) 2px;
+        color: hsl(342, 92%, 46%);
+      }
+      #send-btn {
+        height: 5vh;
+        background-color: hsl(342, 92%, 46%);
+        border-radius: 7px;
+      }
+      @media only screen and (max-width: 426px) {
+        .chatsection {
+          width: 100vw;
+          height: 87vh;
+        }
+        #send-msg {
+          width: 86vw;
+        }
+      }
+      @media only screen and (max-width: 376px) {
+        .chatsection {
+          width: 100vw;
+          height: 88vh;
+        }
+        #send-msg{
+          width: 84vw;
+        }
+      }
+      @media only screen and (max-width: 321px) {
+        .chatsection {
+          width: 100vw;
+          height: 87vh;
+        }
+        #send-msg{
+          width: 81vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>CHATTING.COM</nav>
+
+    <div class="chatsection">
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="right">
+        SUJAL : I AM DOING NOTHING BROW WHATS UP ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="right">
+        SUJAL : I AM DOING NOTHING BROW WHATS UP ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="right">
+        SUJAL : I AM DOING NOTHING BROW WHATS UP ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="right">
+        SUJAL : I AM DOING NOTHING BROW WHATS UP ?
+      </div>
+      <div class="chat" id="right">
+        SUJAL : I AM DOING NOTHING BROW WHATS UP ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+      <div class="chat" id="left">
+        NARUTO : HEY SUJAL WHAT AR EU DOING MAN ?
+      </div>
+    </div>
+
+    <div id="send">
+      <form id="form" action="">
+        <input
+          id="send-msg"
+          type="text"
+          name="message"
+          id=""
+          placeholder="ENTER YOUR MESSAGE"
+        />
+        <button id="send-btn" type="submit">SEND</button>
+        <div id="send"></div>
+      </form>
+    </div>
+  </body>
+</html>
